@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator rozprawek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./kod.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        $(document).ready(function() {
+            addBooks();
+        });
+    </script>
+</head>
+<body>
+    <!-- <h1>Generator rozprawek</h1> -->
+    
+    <div class="topic">
+        <h1>Wygeneruj temat rozprawki</h1>
+        <img src="./assets/book.gif" alt="book">
+        <p id="yourTopic">Tu będzie temat</p>
+        <form>
+            <label for="books">Wybierz lekturę:</label>
+            <select id="books" name="books">
+                <option>Dowolne</option>
+            </select>
+        </form>
+        <button id="generate-btn" onclick="newTopic()">Generuj</button>
+
+        <div class="konteksty" style="visibility: hidden;">
+            <h2>Przykładowe konteksty</h2>
+            <ul id="kontekst"></ul>
+        </div>
+        <button id="showKontekst" onclick="showKontekst()">Pokaż przykładowe konteksty</button>
+
+        <div class="teza" style="visibility: hidden;">
+            <h2>Przykładowe tezy</h2>
+            <ul id="teza"></ul>
+        </div>
+        <button id="showTeza" onclick="showTeza()">Pokaż przykładową tezę</button>
+
+        <div class="arguents" style="visibility: hidden;">
+            <h2>Przykładowe argumenty</h2>
+            <ul id="argument" ></ul>
+        </div>
+        <button id="showArgument" onclick="showArg()">Pokaż przykładowe argumenty</button>
+    </div>
+</body>
+</html>

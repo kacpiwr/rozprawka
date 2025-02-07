@@ -1,0 +1,181 @@
+/* Ogólne ustawienia strony */
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #fdf5e6; /* Kremowe tło */
+    color: #5a3e2b; /* Ciepły, przyjemny kolor tekstu */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Nagłówek */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Kontener główny */
+.topic {
+    margin: 30px;
+    background: #999e84; /* Jasny kremowy */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.topic:hover {
+    transform: scale(1.02);
+}
+
+/* Paragraf z tematem */
+#yourTopic {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #faffe6; /* Jasny pastelowy */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylizacja list */
+ul {
+    list-style-type: none;
+    background: #faffe6;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: auto; /* Ensures the list is centered horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers <li> elements inside */
+}
+
+li {
+    margin-top: 10px;
+    text-align: center; /* Ensures text inside <li> is centered */
+    width: 100%; /* Optional, ensures li items take full width of parent */
+}
+
+/* Formularz */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Stylizacja rozwijanego menu */
+select {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #d4a373;
+    background-color: #fffaf0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+select:hover {
+    border-color: #8b5e34;
+}
+
+/* Przycisk */
+button {
+    background-color: #d4a373;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #8b5e34;
+}
+/* Mobile styles (for screens up to 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .topic {
+        width: 100%;
+        max-width: 90%;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    #yourTopic {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    ul {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    li {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    select {
+        width: 100%;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
